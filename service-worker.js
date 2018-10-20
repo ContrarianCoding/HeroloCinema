@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/HeroloCinema/precache-manifest.1bd90453a80baabcb6d8259014f023f9.js"
+  "/HeroloCinema/public/precache-manifest.8cd3535819e71d89c7a017db78007a16.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/HeroloCinema/index.html", {
+workbox.routing.registerNavigationRoute("/HeroloCinema/public/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

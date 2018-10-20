@@ -1,0 +1,258 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #1f4b64;
+  width: 100%;
+  height: 250vh;
+}
+
+.MovieListContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.btn {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+  background: #f5f6f6; /* Old browsers */
+  background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-self: center;
+  cursor: pointer;
+  padding: 6px 12px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  user-select: none;
+  width: 20vmax;
+}
+
+.btn:hover {
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fceabb+0,fccd4d+50,f8b500+51,fbdf93+100;Orange+3D+%235 */
+  background: rgb(252,234,187); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+}
+
+.btn:active {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
+  background: rgb(248,80,50); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+}
+
+.MovieTabContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+50,b5c6d0+51,e0eff9+100;Grey+Gloss+%232 */
+  background: #f2f6f8; /* Old browsers */
+  background: -moz-linear-gradient(top, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 ); /* IE6-9 */
+  padding: 5px;
+  margin-top: 3px;
+}
+
+.MovieTabHolder {
+  align-self: center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0eff9+0,b5c6d0+49,d8e1e7+50,f2f6f8+100 */
+  background: rgb(224,239,249); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(224,239,249,1) 0%, rgba(181,198,208,1) 49%, rgba(216,225,231,1) 50%, rgba(242,246,248,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(224,239,249,1) 0%,rgba(181,198,208,1) 49%,rgba(216,225,231,1) 50%,rgba(242,246,248,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(224,239,249,1) 0%,rgba(181,198,208,1) 49%,rgba(216,225,231,1) 50%,rgba(242,246,248,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0eff9', endColorstr='#f2f6f8',GradientType=0 ); /* IE6-9 */
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+  padding: 3px;
+  margin: 5px;
+  width: 70%;
+}
+
+.deleteBar {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center
+}
+
+.deleteBar:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
+  background: rgb(248,80,50); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+
+}
+
+img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.PopupContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.6);
+}
+
+.MoviePopupHolder {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebeff3+0,b2bcc4+100 */
+  background: rgb(235,239,243); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(235,239,243,1) 0%, rgba(178,188,196,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(235,239,243,1) 0%,rgba(178,188,196,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(235,239,243,1) 0%,rgba(178,188,196,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebeff3', endColorstr='#b2bcc4',GradientType=0 ); /* IE6-9 */
+  box-shadow: 3px 4px 5px rgba(0,0,0,1);
+  left: 15%;
+  right: 15%;
+  top: 40%;
+  bottom: 40%;
+  min-width: 800px;
+}
+
+.MoviePopupHolder#error {
+  left: 30%;
+  right: 30%;
+  top: 42%;
+  bottom: 42%;
+  min-width: 300px;
+}
+
+.MoviePopup {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 15px;
+  padding: 20px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b2bcc4+0,ebeff3+100 */
+  background: rgb(178,188,196); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(178,188,196,1) 0%, rgba(235,239,243,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(178,188,196,1) 0%,rgba(235,239,243,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(178,188,196,1) 0%,rgba(235,239,243,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2bcc4', endColorstr='#ebeff3',GradientType=0 ); /* IE6-9 */
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  bottom: 30%;
+}
+
+.MoviePopup#error {
+  bottom: 40%;
+}
+
+.MovieTabContainer:hover {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
+  background: #fefcea; /* Old browsers */
+  background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+}
+
+.MovieTabContainer:active {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0b7a1+0,8c3310+50,752201+51,bf6e4e+100;Brown+Gloss */
+  background: #f0b7a1; /* Old browsers */
+  background: -moz-linear-gradient(top, #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+  }
+
+
+.MovieColRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.MovieColLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.App-header {
+  background-color: #0c1a35;
+  min-height: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  text-shadow: 2px 2px #ff0000;
+  box-shadow: 1px 2px 50px rgba(0,0,0,.5);
+  color: rgb(250, 255, 182);
+}
+
+html, body, {
+  width: 100%;
+  height: 150%;
+}
+
+.spacer {
+  height: 30px;
+}
+
+span {
+  font: bold Georgia, serif;
+  margin: 5px;
+}
+
+.error {
+  color: #c50000
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

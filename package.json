@@ -1,7 +1,7 @@
 {
   "name": "herolo-cinema",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "http://contrariancoding.github.io/HeroloCinema",
   "dependencies": {
     "gh-pages": "^2.0.1",

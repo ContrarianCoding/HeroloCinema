@@ -2,7 +2,7 @@
   "name": "herolo-cinema",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://contrariancoding.github.io/HeroloCinema/public/",
+  "homepage": "http://bar-herolo-cinema.herokuapp.com/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.5.2",

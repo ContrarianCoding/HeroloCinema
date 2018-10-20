@@ -88,7 +88,6 @@
   padding: 3px;
   margin: 5px;
   width: 70%;
-  min-width: 600px;
 }
 
 .deleteBar {
@@ -239,6 +238,7 @@ html, body, {
 span {
   font: bold Georgia, serif;
   margin: 5px;
+  overflow: hidden;
 }
 
 .error {

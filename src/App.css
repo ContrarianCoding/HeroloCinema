@@ -155,7 +155,7 @@ img {
   background: linear-gradient(to bottom, rgba(235,239,243,1) 0%,rgba(178,188,196,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebeff3', endColorstr='#b2bcc4',GradientType=0 ); /* IE6-9 */
   box-shadow: 3px 4px 5px rgba(0,0,0,1);
-  min-height: 200px;
+  min-height: 250px;
   max-height: 90%;
   min-width: 300px;
   max-width: 90%;
@@ -193,13 +193,13 @@ img {
   bottom: 30%;
   margin: 5px;
   min-width: 75%;
-  min-height: 45%;
+  min-height: 50%;
   max-width: 95%;
-  height: calc(400px - 400vw);
 }
 
 .MoviePopup#error {
   bottom: 40%;
+  max-width: 85%;
 }
 .btn {
   display: flex;

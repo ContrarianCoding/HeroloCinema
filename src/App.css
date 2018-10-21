@@ -147,6 +147,7 @@ img {
   justify-content: flex-end;
   align-items: center;
   align-self: center;
+  overflow: auto;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebeff3+0,b2bcc4+100 */
   background: rgb(235,239,243); /* Old browsers */
   background: -moz-linear-gradient(top, rgba(235,239,243,1) 0%, rgba(178,188,196,1) 100%); /* FF3.6-15 */
@@ -193,7 +194,8 @@ img {
   margin: 5px;
   min-width: 75%;
   min-height: 45%;
-  height: calc(400px - 200vw);
+  max-width: 95%;
+  height: calc(400px - 400vw);
 }
 
 .MoviePopup#error {

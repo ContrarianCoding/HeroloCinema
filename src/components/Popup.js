@@ -93,7 +93,7 @@ class Popup extends Component {
 
     getButtons() {
         return (
-        <div>
+        <div className="MovieTabPairContainer">
             <button className="btn" onClick={() => this.okOnClick()}>Okay</button>
             <button className="btn" onClick={() => this.cancelOnClick()}>Cancel</button>
         </div>
@@ -105,8 +105,8 @@ class Popup extends Component {
         return (
         <div className="PopupContainer">
             <div className="MoviePopupHolder">
-                {this.getButtons()}
                 <EditMoviePopup id={this.props.editSelected} movie={this.props.movies.candidate} changeThings={(movie) => editCandidateAction(movie)(this.props.dispatch)} />
+                {this.getButtons()}
             </div>
         </div>
         )
@@ -115,8 +115,8 @@ class Popup extends Component {
         return (
         <div className="PopupContainer">
             <div className="MoviePopupHolder">
-                {this.getButtons()}
                 <EditMoviePopup id={this.props.movies.movieList.length} movie={this.props.movies.candidate} changeThings={(movie) => editCandidateAction(movie)(this.props.dispatch)} />
+                {this.getButtons()}
             </div>
         </div>
         )
@@ -125,8 +125,8 @@ class Popup extends Component {
         return (
         <div className="PopupContainer">
             <div className="MoviePopupHolder">
-                {this.getButtons()}
                 <DeleteMoviePopup movie={this.props.movies.movieList[this.props.deleteSelected].Title} />
+                {this.getButtons()}
             </div>
         </div>
         )

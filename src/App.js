@@ -28,9 +28,7 @@ class App extends Component {
           <header className="App-header">
             <h1>Welcome to Herolo Cinema!</h1>
           </header>
-          <div className="spacer"></div>
           <MovieList />
-          <div className="spacer"></div>
           <button className="btn" onClick={() => toggleNewMovieAction()(store.dispatch)}>New Movie</button>
           <Popup />
           <ErrorPopup />

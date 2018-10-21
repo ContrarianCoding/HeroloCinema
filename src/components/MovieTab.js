@@ -12,29 +12,35 @@ export default class MovieTab extends Component {
         return (
             <div className="MovieTabHolder">
                 <div className="MovieTabContainer" onClick={this.props.editClick}>
-                    <div className="MovieColRight">
-                        <span>ID: </span>
-                        <span>Title: </span>
+                    <div className="MovieTabPairContainer">
+                        <div className="MovieColRight">
+                            <span>ID: </span>
+                            <span>Title: </span>
+                        </div>
+                        <div className="MovieColLeft">
+                            <span>{this.myID}</span>
+                            <span>{this.myTitle}</span>
+                        </div>
                     </div>
-                    <div className="MovieColLeft">
-                        <span>{this.myID}</span>
-                        <span>{this.myTitle}</span>
+                    <div className="MovieTabPairContainer">
+                        <div className="MovieColRight">
+                            <span>Year: </span>
+                            <span>Runtime: </span>
+                        </div>
+                        <div className="MovieColLeft">
+                            <span>{this.myYear}</span>
+                            <span>{this.myTime}</span>
+                        </div>
                     </div>
-                    <div className="MovieColRight">
-                        <span>Year: </span>
-                        <span>Runtime: </span>
-                    </div>
-                    <div className="MovieColLeft">
-                        <span>{this.myYear}</span>
-                        <span>{this.myTime}</span>
-                    </div>
-                    <div className="MovieColRight">
-                        <span>Genre: </span>
-                        <span>Director: </span>
-                    </div>
-                    <div className="MovieColLeft">
-                        <span>{this.myGenre}</span>
-                        <span>{this.myDir}</span>
+                    <div className="MovieTabPairContainer">
+                        <div className="MovieColRight">
+                            <span>Genre: </span>
+                            <span>Director: </span>
+                        </div>
+                        <div className="MovieColLeft">
+                            <span>{this.myGenre}</span>
+                            <span>{this.myDir}</span>
+                        </div>
                     </div>
                 </div>
                 <div className="deleteBar" onClick={this.props.deleteClick}>
@@ -44,3 +50,4 @@ export default class MovieTab extends Component {
         )
     }
 }
+//

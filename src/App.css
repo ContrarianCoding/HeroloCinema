@@ -193,7 +193,7 @@ img {
   margin: 5px;
   min-width: 75%;
   min-height: 45%;
-  height: calc(400px - 20vw);
+  height: calc(400px - 200vw);
 }
 
 .MoviePopup#error {

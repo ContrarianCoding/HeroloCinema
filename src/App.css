@@ -82,8 +82,24 @@
 .MovieTabPairContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
   margin: 5px;
+}
+
+.MovieTabPairContainer#idTab {
+  margin-bottom: 26px;
+}
+
+.MovieCol {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  flex: 1;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .MovieColRight {
@@ -119,6 +135,7 @@ img {
     margin: 5px;
     align-self: center;
 }
+
 .deleteBar:hover {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
   background: rgb(248,80,50); /* Old browsers */
@@ -245,8 +262,7 @@ img {
 }
 
 input {
-  width: 60%;
-  margin-bottom: 5px;
+  width: 80%;
 }
 
 span {

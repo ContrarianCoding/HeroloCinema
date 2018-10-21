@@ -66,33 +66,33 @@ export default class EditMoviePopup extends Component {
         }
         return (
             <div className="MoviePopup">
-                <div className="MovieTabPairContainer">
-                    <div className="MovieColRight">
+                <div className="MovieCol">
+                    <div className="MovieTabPairContainer" id="idTab">
                         <span>ID: </span>
-                        <span>Title: </span>
-                    </div>
-                    <div className="MovieColLeft">
                         <span>{this.myID}</span>
+                    </div>
+                    <div className="MovieTabPairContainer">
+                        <span>Title: </span>
                         <input type="text" value={this.myTitle} onChange={(val) => this.editTitle(val.target.value)} />
                     </div>
                 </div>
-                <div className="MovieTabPairContainer">
-                    <div className="MovieColRight">
+                <div className="MovieCol">
+                    <div className="MovieTabPairContainer">
                         <span>Year: </span>
-                        <span>Runtime: </span>
-                    </div>
-                    <div className="MovieColLeft">
                         <input type="text" value={this.myYear} onChange={(val) => this.editYear(val.target.value)} />
+                    </div>
+                    <div className="MovieTabPairContainer">
+                        <span>Runtime: </span>
                         <input type="text" value={this.myTime} onChange={(val) => this.editTime(val.target.value)} />
                     </div>
                 </div>
-                <div className="MovieTabPairContainer">
-                    <div className="MovieColRight">
+                <div className="MovieCol">
+                    <div className="MovieTabPairContainer">
                         <span>Genre: </span>
-                        <span>Director: </span>
-                    </div>
-                    <div className="MovieColLeft">
                         <input type="text" value={this.myGenre} onChange={(val) => this.editGenre(val.target.value)} />
+                    </div>
+                    <div className="MovieTabPairContainer">
+                        <span>Director: </span>
                         <input type="text" value={this.myDir} onChange={(val) => this.editDirector(val.target.value)} />
                     </div>
                 </div>

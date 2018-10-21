@@ -191,8 +191,8 @@ img {
   top: 5%;
   bottom: 30%;
   margin: 5px;
-  min-width: 80%;
-  min-height: 50%;
+  min-width: 75%;
+  min-height: 45%;
   height: calc(400px - 20vw);
 }
 

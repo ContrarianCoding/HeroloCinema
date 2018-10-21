@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex: 1;
   max-width: 90%;
   max-height: 90%;
@@ -99,7 +99,7 @@
 .MovieColLeft {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex: 2;
   max-width: 90%;
   max-height: 90%;
@@ -155,11 +155,12 @@ img {
   background: linear-gradient(to bottom, rgba(235,239,243,1) 0%,rgba(178,188,196,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebeff3', endColorstr='#b2bcc4',GradientType=0 ); /* IE6-9 */
   box-shadow: 3px 4px 5px rgba(0,0,0,1);
-  min-height: 250px;
+  height: 220px;
   max-height: 90%;
-  min-width: 300px;
+  min-width: 250px;
   max-width: 95%;
-  top: 35%;
+  max-width: 850px;
+  top: 30%;
   bottom: 40%;
   left: 15%;
   right: 15%;
@@ -244,13 +245,14 @@ img {
 }
 
 input {
-  max-width: 70%;
+  width: 60%;
+  margin-bottom: 5px;
 }
 
 span {
   display: flex;
   flex: 1;
-  margin: 3px;
+  margin: 5px;
   max-width: 100%;
   overflow-wrap: break-word;
 }

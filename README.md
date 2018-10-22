@@ -9,3 +9,6 @@ To remove a movie from the list please click the delete tab on the bottom of the
 
 ## Add
 To add a new movie please scroll to the bottom and click the "New Movie" button.
+
+## Live Demo
+to try a live demo of this project please visit [Live Demo](https://bar-herolo-cinema.herokuapp.com/)
